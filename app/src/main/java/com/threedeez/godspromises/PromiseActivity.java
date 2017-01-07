@@ -13,6 +13,7 @@ import android.widget.Toast;
 import java.util.Random;
 
 public class PromiseActivity extends AppCompatActivity {
+    public static final String TAG = PromiseActivity.class.getSimpleName();
     private PromiseBook PromiseBook = new PromiseBook();
     private ColorWheel ColorWheel = new ColorWheel();
 // Declare our View Variables
@@ -46,6 +47,6 @@ public class PromiseActivity extends AppCompatActivity {
         };
         showAnotherPromiseButton.setOnClickListener(Listener);
         //Toast.makeText(PromiseActivity.this, "Yay! Our Promises are Being Delivered!", Toast.LENGTH_SHORT).show();
-           Log.d("PromiseActivity", "We are Logging from the onCreate Method!");
+           Log.d(TAG, "We are Logging from the onCreate Method!");
     }
 }
