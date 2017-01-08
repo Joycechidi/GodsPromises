@@ -19,18 +19,6 @@
         android:textSize="24sp"
         android:textColor="@android:color/white"/>
 
-    <TextView
-        android:text="@string/god_s_promises_never_fail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="15dp"
-        android:layout_marginEnd="15dp"
-        android:id="@+id/PromiseTextView"
-        android:textSize="24sp"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"/>
-
     <Button
         android:text="@string/show_another_promise"
         android:layout_width="wrap_content"
@@ -39,7 +27,19 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/AnotherPromiseButton"
         android:background="@android:color/white"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textColor="#ff33b5e5"/>
+
+    <TextView
+        android:text="@string/god_s_promises_never_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PromiseTextView"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/AnotherPromiseButton"
+        android:layout_alignEnd="@+id/AnotherPromiseButton"/>
 
 </RelativeLayout>
